@@ -6,7 +6,8 @@ createApp({
             message: 'Ciao come va?',
             imgName: "./img/flw.jpg",
             altText: "lotr image",
-            btn: ""
+            btn: "",
+            heroName: ""
         }
     },
     methods: {
@@ -14,12 +15,17 @@ createApp({
             if(this.btn === "") {
                 this.imgName = "";
                 this.altText = "";
+                this.heroName = "no è Aragorn"
                 this.btn = "off";
             } else {
                 this.imgName = "./img/flw.jpg";
                 this.altText = "lotr image";
                 this.btn = "";
+                this.heroName = ""
             }
+        },
+        heroImg: function() {
+            
         }
     }
 }).mount('#app')

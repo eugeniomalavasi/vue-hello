@@ -13,6 +13,9 @@
         <img :src="imgName" :alt="altText">
         <h1>{{ message }}</h1>
         <button @click="off">cliccami</button>
+        <br>
+        <label for="character">inserisci il tuo personaggio preferito di LOTR</label>
+        <input type="text" id="character" v-model="heroName">
     </div>
 
     <script src="./js/script.js"></script>
