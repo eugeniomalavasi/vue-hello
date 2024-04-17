@@ -9,7 +9,11 @@
 </head>
 
 <body>
-    <div id="app">{{ message }}</div>
+    <div id="app">
+        <img :src="imgName" :alt="altText">
+        <h1>{{ message }}</h1>
+        <button @click="off">cliccami</button>
+    </div>
 
     <script src="./js/script.js"></script>
 </body>
